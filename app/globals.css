@@ -1,0 +1,34 @@
+:root{--bg:#0b1020;--panel:#111836;--muted:#7a86b6;--text:#e7ecff;--accent:#7c9cff;--accent-2:#a1ffd1;--danger:#ff9aa2}
+*{box-sizing:border-box}
+html,body{padding:0;margin:0;height:100%}
+body{background:linear-gradient(180deg,#0b1020 0%,#0d1430 100%);color:var(--text);font:16px/1.5 system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji"}
+.container{max-width:1100px;margin:0 auto;padding:24px}
+.header{padding:8px 0 16px;border-bottom:1px solid #1f2a52;margin-bottom:16px}
+.header h1{margin:0;font-size:24px}
+.subtitle{margin:4px 0 0;color:var(--muted)}
+.footer{margin-top:32px;color:var(--muted);font-size:12px}
+
+.stack{display:flex;flex-direction:column;gap:16px}
+.panel{background:var(--panel);border-radius:14px;border:1px solid #1e2a50;box-shadow:0 10px 25px rgba(0,0,0,.25);}
+.pad{padding:16px}
+.title{font-weight:600;margin:0 0 8px 0}
+.muted{color:var(--muted)}
+.btn{background:var(--accent);color:#0c1228;border:none;border-radius:10px;padding:10px 14px;font-weight:600;cursor:pointer}
+.btn:disabled{opacity:.6;cursor:not-allowed}
+.btn.secondary{background:transparent;color:var(--text);border:1px solid #2a3a70}
+.btn.danger{background:var(--danger)}
+.row{display:flex;gap:12px;align-items:center;flex-wrap:wrap}
+.input, .select, .textarea{background:#0e1430;border:1px solid #273364;border-radius:10px;color:var(--text);padding:10px 12px}
+.select{padding:10px}
+.badge{display:inline-flex;align-items:center;gap:6px;background:#0f1a3e;border:1px solid #273365;color:#b9c3f2;border-radius:999px;padding:6px 10px;font-size:12px}
+.list{display:grid;grid-template-columns:repeat(auto-fill, minmax(250px, 1fr));gap:12px}
+.card{border-radius:12px;overflow:hidden}
+.preview{background:#0a0f28;display:flex;align-items:center;justify-content:center;min-height:140px}
+.preview img, .preview video{max-width:100%;max-height:220px;display:block}
+.meta{display:flex;justify-content:space-between;gap:8px;align-items:center}
+.meta .name{font-weight:600;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;max-width:60%}
+.meta .small{font-size:12px;color:var(--muted)}
+.checkbox{width:16px;height:16px}
+
+.drop{border:2px dashed #2a3a70;background:#0a0f28;padding:20px;border-radius:12px;text-align:center;color:#b5c1f5}
+.drop.hover{border-color:var(--accent)}
